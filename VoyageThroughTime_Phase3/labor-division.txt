@@ -1,0 +1,15 @@
+Labor Division
+Jane:
+-Coded StoryNode Class 
+-Coded StoryGraph Class
+-Built the Medieval section of graph (about 1/3 of story)
+
+Kate: 
+-Coded StoryGUI Class
+-Coded StoryPanel Class
+-Copy editing story
+
+Dana: 
+-Coded Player Class
+-Wrote Story
+-Built the beginning section and Old West section of graph (about 2/3 of story)

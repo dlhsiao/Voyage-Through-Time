@@ -1,0 +1,88 @@
+//*******************************************************************
+//  StoryNode.java 
+//
+//  Represents a node in the story graph with a name, descriptive text,
+//point value, imprtance boolean, and decendants.
+//
+//Primary Coder: Jane
+//*******************************************************************
+
+//package javafoundations;
+
+public class StoryNode{
+
+public String name;
+public String description;
+public int value;
+public boolean isImportant;
+public String image;
+
+  
+  //-----------------------------------------------------------------
+  //  Creates a new StoryNode with the specified data.
+  //-----------------------------------------------------------------
+  public StoryNode (String n,String d, int v, boolean i, String im){
+    name = n;
+    description = d;
+    value = v;
+    isImportant = i;
+    image = im;
+  }
+  
+  //-----------------------------------------------------------------
+  //  Returns the name of the node.
+  //-----------------------------------------------------------------
+  public String getName()
+  {
+    return name;
+  }
+  
+  //-----------------------------------------------------------------
+  //  Returns the description of the node.
+  //-----------------------------------------------------------------
+  public String getDescription()
+  {
+    return description;
+  }
+  
+  //-----------------------------------------------------------------
+  //  Returns the value of the node.
+  //-----------------------------------------------------------------
+  public int getValue()
+  {
+    return value;
+  }
+  
+  //-----------------------------------------------------------------
+  //  Returns the importance of the node.
+  //-----------------------------------------------------------------
+  public boolean getImportance()
+  {
+    return isImportant;
+  }
+  
+    //-----------------------------------------------------------------
+  //  Returns the importance of the node.
+  //-----------------------------------------------------------------
+  public String getImage()
+  {
+    return image;
+  }
+
+
+  public String toString(){
+//    return "The node name is " + name + "\nThe node descrition is " + description +
+//      "\nThe value is " +value+ "\nThe node imprtance is " + isImportant;
+    return name;
+  }
+  
+  public static void main(String[] args) {
+    StoryNode one = new StoryNode("Enter the building", "You walk into the saloon and see lots of stuff", 0, false, "oldWest");
+    //System.out.println(one);
+    System.out.println(one.getName());
+    System.out.println(one.getDescription());
+    System.out.println(one.getValue());
+    System.out.println(one.getImportance());
+    System.out.println(one.getImage());
+  }
+}
